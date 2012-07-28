@@ -1,0 +1,454 @@
+/***** Roundcube|Mail address book task styles *****/
+
+fieldset
+{
+  margin-bottom: 0.5em;
+  border: 1px solid #bfd9f2;
+  padding: 4px 8px 9px 8px; 
+}
+
+#abooktoolbar
+{
+  position: absolute;
+  top: 70px;
+  /*left: 205px;*/
+  right: 205px;
+  height: 35px;
+}
+
+#abooktoolbar a
+{
+  padding-right: 10px;
+}
+
+#abooktoolbar a.button,
+#abooktoolbar a.buttonPas,
+#abooktoolbar span.separator {
+  display: block;
+  float: right;
+  width: 27px;
+  height: 24px;
+  padding: 0;
+  margin-right: 5px;
+  overflow: hidden;
+  background: #f4fbff url(images/abook_toolbar.png) 0 0 no-repeat;
+  opacity: 0.99; /* this is needed to make buttons appear correctly in Chrome */
+  border: 1px solid #bfd9f2;  
+}
+
+#abooktoolbar a.buttonPas {
+  opacity: 0.35;
+}
+
+#abooktoolbar a.addcontactSel {
+  background-position: 0 -24px;
+}
+
+#abooktoolbar a.compose {
+  background-position: -24px 0;
+}
+
+#abooktoolbar a.composeSel {
+  background-position: -24px -24px;
+}
+
+#abooktoolbar a.delete {
+  background-position: -48px 0;
+}
+
+#abooktoolbar a.deleteSel {
+  background-position: -48px -24px;
+}
+
+#abooktoolbar a.import {
+  background-position: -72px 0;
+}
+
+#abooktoolbar a.importSel {
+  background-position: -72px -24px;
+}
+
+#abooktoolbar a.export {
+  background-position: -96px 0;
+}
+
+#abooktoolbar a.exportSel {
+  background-position: -96px -24px;
+}
+
+#abooktoolbar a.search {
+  background-position: -128px 0;
+}
+
+#abooktoolbar a.searchSel {
+  background-position: -128px -24px;
+}
+
+#abooktoolbar span.separator {
+  width: 7px;
+  background-position: -120px 0;
+  border: none;
+  background-color: transparent;
+}
+
+#contacts-buttons {
+  float: right;
+  height: 18px;
+  width: 100px;
+  padding: 8px 4px 0 0;
+}
+
+#contacts-buttons a {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 18px;
+  margin-left: 5px;
+}
+
+#contacts-buttons a.contacts-add {
+  background: url(images/icons/contacts_add.png) 0 0 no-repeat;
+}
+
+#contacts-buttons a.contacts-compose {
+  background: url(images/icons/contacts_compose.png) 0 0 no-repeat;
+}
+
+#contacts-buttons a.contacts-delete {
+  background: url(images/icons/contacts_delete.png) 0 0 no-repeat;
+}
+
+
+#abookcountbar
+{
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+#addressscreen
+{
+  position: absolute;
+  top: 105px;
+  right: 20px;
+  bottom: 20px;
+  left: 225px;
+}
+
+#directorylistbox
+{
+  position: absolute;
+  top: 105px;
+  bottom: 20px;
+  left: 20px;
+  width: 195px;
+  border: 1px solid #afcfef;
+  background-color: #e9f4ff;
+  overflow: hidden;
+}
+
+#directorylistbox input
+{
+  margin: 2px;
+  width: 90%;
+}
+
+#addresslist
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #afcfef;
+  background-color: #e9f4ff;
+  overflow: hidden;
+}
+
+#contactgroupslist
+{
+  border-top: 1px solid #999;
+}
+
+#addresslist
+{
+  left: 0px;
+  width: 280px;
+}
+
+#directorylist
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #e9f4ff;
+}
+
+#directorylist li
+{
+  display: block;
+  font-size: 11px;
+  background: url(images/icons/folders.png) 5px -108px no-repeat;
+  /*border-bottom: 1px solid #EBEBEB;*/
+  white-space: nowrap;
+}
+
+#directorylist li a
+{
+  cursor: default;
+  display: block;
+  padding-left: 25px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#directorylist li.contactgroup
+{
+  padding-left: 15px;
+  background-position: 20px -144px;
+}
+
+#directorylist li.selected
+{
+  background-color: #509eea;
+  /*border-bottom: 1px solid #509eea;*/
+}
+
+#directorylist li.selected a
+{
+  color: #FFF;
+  font-weight: bold;
+}
+
+#directorylist li.droptarget
+{
+  background-color: #FFFFA6;
+}
+
+#contacts-table
+{
+  width: 100%;
+  table-layout: fixed;
+}
+
+#contacts-table tbody td
+{
+  cursor: default;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+
+#contacts-box
+{
+  position: absolute;
+  top: 0px;
+  left: 290px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid #afcfef;
+  overflow: hidden;
+}
+
+body.iframe,
+#contact-frame
+{
+  background-color: #fff;
+  border: none;
+  min-height: 100%; /* Chrome 14 bug */  
+}
+
+#contact-details {
+  padding-top: 0;
+}
+
+#contact-details table td.title
+{
+  font-weight: bold;
+  text-align: right;
+}
+
+#contacttabs
+{
+	position: relative;
+	padding-bottom: 12px;
+}
+
+#contacttabs div.tabsbar {
+	top: 0;
+	left: 2px;
+}
+
+#contacttabs fieldset.tabbed {
+	position: relative;
+	top: 38px;
+	min-height: 5em;
+}
+
+#contacthead
+{
+	margin-bottom: 1em;
+	border: 0;
+	padding: 0;
+}
+
+#contacthead .names span.namefield {
+  font-size: 120%;
+  font-weight: bold;  
+}
+
+#contacthead .names input
+{
+
+}
+
+#contacthead .displayname span.namefield
+{
+
+}
+
+#contacthead span.nickname:before,
+#contacthead span.nickname:after,
+#contacthead input.ff_nickname:before,
+#contacthead input.ff_nickname:after
+{
+	content: '"';
+}
+
+#contacthead input
+{
+	margin-right: 6px;
+	margin-bottom: 0.5em;
+}
+
+#contacthead .names input,
+#contacthead .addnames input
+{
+	width: 180px;
+}
+
+#contacthead input.ff_prefix,
+#contacthead input.ff_suffix
+{
+	width: 90px;
+}
+
+#contacthead .addnames input.ff_name
+{
+	width: 374px;
+}
+
+#contactphoto
+{
+	float: right;
+	width: 60px;
+	margin-left: 3em;
+	margin-right: 4px;
+}
+
+#contactpic
+{
+	width: 60px;
+	min-height: 60px;
+	border: 1px solid #ccc;
+	background: white;
+}
+
+#contactpic img {
+	width: 60px;
+}
+
+#contactphoto .formlinks
+{
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+fieldset.contactfieldgroup
+{
+	border: 0;
+	margin: 0.5em 0;
+	padding: 0.2em 2px;
+}
+
+fieldset.contactfieldgroupmulti
+{
+	padding: 0.5em 2px;
+}
+
+fieldset.contactfieldgroup legend
+{
+	font-size: 0.9em;
+}
+
+.contactfieldgroup .row
+{
+	position: relative;
+	margin: 0.5em 0;
+}
+
+.contactfieldgroup .contactfieldlabel
+{
+	position: absolute;
+	top: 8px;
+	left: 2px;
+	width: 110px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #666;
+	font-weight: bold;
+}
+
+.contactfieldgroup .contactfieldlabel select
+{
+	width: 100%;
+	background: none;
+	border: 0;
+	color: #666;
+	font-weight: bold;
+	padding-left: 0;
+}
+
+.contactfieldgroup .contactfieldcontent
+{
+	padding-left: 120px;
+	min-height: 1em;
+	line-height: 1.3em;
+}
+
+.contactfieldgroup .contactfield {
+	line-height: 1.3em;
+}
+
+.contactcontrolleraddress .contactfieldcontent input {
+	margin-bottom: 0.5em;
+}
+
+.contactfieldcontent .contactfieldbutton {
+	vertical-align: middle;
+	margin-left: 0.5em;
+}
+
+.contactfieldcontent input {
+  width: 80%;
+}
+
+#upload-form
+{
+	padding: 6px;
+}
+
+#upload-form div
+{
+	padding: 2px;
+}
+
+#sourcename
+{
+  color: #666;
+  font-size: 10px;
+  margin: -5px 0 8px 2px;
+}
+
+.contactButtons {
+  margin-top: 30px;
+}

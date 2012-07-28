@@ -1,0 +1,20 @@
+2.1 (2012-04-17)
+================
+- fixed the problem with the blocked images functionality
+- added styled button image for help plugin
+- changed button image for markasjunk plugin
+- changed help display to match theme style
+- changed logo and watermark
+
+2.0 (2011-10-14)
+================
+- upgraded the theme to work under Roundcube 0.6
+  - added support for advanced address search
+  - added support for new address handling
+  - added support for contact images
+  - added support for attachment/inline forwarding options
+
+- added full header view
+- adjusted various display issues
+- changed watermark image
+- changed favicon

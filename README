@@ -1,0 +1,64 @@
+LITECUBE FREE - ROUNDCUBE SKIN
+------------------------------
+
+Roundcube compatibility
+-----------------------
+
+The theme has been tested and is fully compatible with Roundcube 0.6 and 0.7. It might not work properly on earlier or later versions of Roundcube. The theme is compatible with all Roundcube languages.
+
+Browser compatibility
+---------------------
+
+The theme is compatible with all modern desktop browsers. To use the theme on mobile devices, install its mobile counterpart, LiteCube Mobile, and the NutsMail Theme Selector plugin (commercial license only).
+
+Installation
+------------
+
+In order to install the theme, copy the folders "skins" and "plugins" to your Roundcube installation.
+
+To set the theme as default for the login screen, edit the file "config/main.inc.php" and set the variable $rcmail_config['skin'] like this:
+
+$rcmail_config['skin'] = "litecube";
+
+The users will be able to select the theme by going to Settings -> User Interface.
+
+License
+-------
+
+This skin is released under a dual-licensing scheme:
+
+PRIVATE LICENSE
+
+Summary of the Private License terms:
+
+1. You are permitted to use the skin free of charge for personal and non-commercial purposes. You are not permitted to sell or otherwise derive any monetary profit from the skin.
+
+2. You are permitted to distribute the skin freely as long as all the files are present and unmodified.
+
+3. You are permitted to modify the skin and distribute the modified version as long as you meet the following conditions:
+   a) the modified skin is released under the same Private License Agreement as the original,
+   b) the cumulative authors are properly credited,
+   c) a copy of the modified skin is sent to NutsMail.com.
+
+4. NutsMail.com will not provide any personalized technical support for the skin. Please search the free forums to find solutions to the problems you encounter.
+
+(See the file LICENSE-PRIVATE for details.)
+
+COMMERCIAL LICENSE
+
+Summary of the Commercial License terms:
+
+1. If you plan to use the skin for commercial purposes, you must first purchase a commercial license from NutsMail.com. The commercial license is time-limited and entitles you to use the skin on a single server.
+
+2. You are not permitted to resell, lease or sub-license the skin.
+
+3. You are permitted to modify the skin for the use on the server for which you purchased the license. You are not allowed to distribute the modified versions of the skin. Using a modified version of the skin will void your technical support rights.
+
+(See the file LICENSE-COMMERCIAL for details.)
+
+Copyright and credits
+---------------------
+
+Graphical Design Copyright (c) 2011 Tecorama
+
+The skin's code is based on RoundCube WebMail Default Skin, released by the RoundCube team under the Creative Commons Attribution-ShareAlike License. The skin uses a modified set of icons originally designed by Mark James (http://www.famfamfam.com/lab/icons/silk) released under Creative Commons Attribution 2.5 License.
